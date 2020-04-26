@@ -18,7 +18,7 @@ request.onsuccess = function(event) {
 };
 
 request.onerror = function(event) {
-  console.log("Woops! " + event.target.errorCode);
+  console.log("Oops! " + event.target.errorCode);
 };
 
 function saveRecord(record) {
@@ -33,6 +33,7 @@ function saveRecord(record) {
 }
 
 function checkDatabase() {
+  console.log("Back online - syncing to database.")
   // open a transaction on your pending db
   const transaction = db.transaction(["pending"], "readwrite");
   // access your pending object store
