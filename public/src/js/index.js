@@ -93,7 +93,7 @@ function sendTransaction(isAdding) {
   // create record
   const transaction = {
     name: nameEl.value,
-    value: amountEl.value,
+    value: Math.abs(amountEl.value),
     date: new Date().toISOString()
   };
 
