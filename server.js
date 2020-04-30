@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "public", "assets")));
-app.use(express.static(path.join(__dirname, "public", process.env.NODE_ENV === "production" ? "build" : "dist")));
+//app.use(express.static(path.join(__dirname, "public", process.env.NODE_ENV === "production" ? "build" : "dist")));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
   useNewUrlParser: true,

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node server & npm --prefix public run dev",
-    "start": "node server.js"
+    "start": "node server.js", 
+    "heroku-postbuild": "npm --prefix public run build"
   },
   "repository": {
     "type": "git",
