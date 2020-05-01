@@ -8,7 +8,6 @@ const config = {
   entry: {
     index: "./src/js/index.js",
     db: "./src/js/db.js",
-    serviceWorker: "./src/js/serviceWorker.js"
   },
   output: {
     path: __dirname + "/assets/dist",
