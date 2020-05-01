@@ -6,11 +6,11 @@ require("dotenv").config();
 
 const config = {
   entry: {
-    index: "./src/js/index.js",
-    db: "./src/js/db.js",
+    index: "./public/src/js/index.js",
+    db: "./public/src/js/db.js",
   },
   output: {
-    path: __dirname + "/assets/dist",
+    path: __dirname + "/public/assets/dist",
     filename: "[name].bundle.js"
   },
 //  mode: "development",
@@ -41,7 +41,7 @@ const config = {
       "theme-color": "#ffffff",
       start_url: "/",
       icons: [{
-        src: path.resolve("assets/icons/icon-128x128.png"),
+        src: path.resolve("public/assets/icons/icon-128x128.png"),
         sizes: [128, 512],
         destination: "icons"
       }]
